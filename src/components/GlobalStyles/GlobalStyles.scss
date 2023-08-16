@@ -1,0 +1,86 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-family: Poppins, sans-serif !important;
+    text-rendering: optimizeSpeed;
+}
+
+:root {
+    --transparent: transparent;
+    --white: #fff;
+    --black: #000;
+    --hover-color: #be0f34;
+    --campbar-bg: #424cc7;
+    --grey: #868686;
+    --gray: #b9b9b9;
+    --yewllow:#ffc107;
+}
+
+.outline-0 {
+    outline: none;
+}
+
+button {
+    &.hover-default:hover {
+        background-color: var(--hover-color) !important;
+    }
+
+    &.hover-fade:hover {
+        transition: all 0.3s;
+        background-color: var(--hover-color) !important;
+    }
+
+    &.hover-translate {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            background: #be0f34;
+            left: 0;
+            width: 100%;
+            height: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+            z-index: -1;
+        }
+
+        &:hover::before {
+            height: 100%;
+            opacity: 1;
+            visibility: visible;
+            bottom: 0;
+            top: auto;
+        }
+
+        &:hover{
+            transition: all 0.3s ease-in-out;
+            background-color: transparent !important;
+        }
+    }
+
+    &.hover-fade-white:hover{
+        background-color: var(--white) !important;
+        color: var(--black) !important;
+    }
+}
+
+.wrapper-item+.wrapper-item{
+    padding-top: 80px;
+    background-color: var(--white);
+}

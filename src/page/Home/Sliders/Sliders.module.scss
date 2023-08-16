@@ -1,0 +1,55 @@
+.wrapper {
+    height: 760px;
+    max-height: 760px;
+    z-index: -1;
+
+    .item {
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 760px;
+            object-fit: cover;
+        }
+
+        .content {
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            color: var(--white);
+            transform: translateY(-50%);
+
+            .title {
+                font-size: 8rem;
+                text-transform: uppercase;
+                font-family: 'Cormorant Garamond';
+            }
+
+            .sub-title {
+                font-size: 3.4rem;
+                font-family: 'Cormorant Garamond';
+                text-transform: uppercase;
+                margin-bottom: 15px;
+            }
+
+            .btn-shop {
+                border: 1px solid var(--white);
+                background-color: transparent;
+                font-size: 0.9rem;
+                line-height: 34px;
+                padding: 0px 34px;
+                text-transform: uppercase;
+                color: var(--white);
+                transition: all 0.3s ease-in-out;
+
+                a {
+                    color: currentColor;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}

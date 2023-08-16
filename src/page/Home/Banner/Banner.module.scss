@@ -1,0 +1,190 @@
+.wrapper {
+    .item {
+        position: relative;
+    }
+
+    .item.banner-static {
+        padding: 10px;
+
+        &:hover {
+            .img img {
+                transform: scale(1.1);
+            }
+        }
+
+        .img {
+            display: block;
+            overflow: hidden;
+
+            img {
+                transition: all 0.6s ease-out;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .content {
+            position: absolute;
+            z-index: 1;
+            color: var(--white);
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+            width: calc(100% - 20px);
+
+            .title {
+                font-family: Cormorant Garamond, serif;
+                font-size: 5rem;
+                font-weight: 400;
+                text-transform: uppercase;
+                white-space: break-spaces;
+                margin-bottom: 12px;
+            }
+
+            .gotoshop {
+                font-size: 1rem;
+                color: currentColor;
+                text-transform: uppercase;
+                position: relative;
+                letter-spacing: 1.5px;
+                font-weight: 500;
+                padding-bottom: 5px;
+                text-decoration: none;
+
+                &:hover::after {
+                    width: 50%;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    -webkit-transform: translateX(-50%);
+                    transform: translateX(-50%);
+                    width: 100%;
+                    height: 2px;
+                    background: #fff;
+                    -webkit-transition: all 0.3s ease;
+                    transition: all 0.3s ease;
+                }
+            }
+        }
+    }
+
+    .item.banner-bestseller {
+        position: relative;
+
+        .img {
+            width: 100%;
+            height: 100%;
+            background-image: url('https://wpbingosite.com/wordpress/cerla/wp-content/uploads/2021/01/img4-3.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 60px 15px;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+
+            div {
+                background-color: var(--white);
+                max-width: 500px;
+                padding: 60px 20px;
+                text-align: center;
+                margin: auto;
+
+                .title {
+                    font-size: 6rem;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    font-family: Cormorant Garamond, serif;
+                }
+
+                .gotoshop {
+                    color: var(--black);
+                    font-size: 1rem;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    letter-spacing: 1.5px;
+                    border-bottom: 2px solid;
+                    padding-bottom: 6px;
+                    transition: all 0.2s ease-in;
+
+                    &:hover {
+                        color: var(--hover-color);
+                    }
+                }
+            }
+        }
+    }
+
+    .item.banner-onlyimage {
+        background-image: url(https://wpbingosite.com/wordpress/cerla/wp-content/uploads/2021/01/img4-4.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .item.banner-widget {
+        background-color: #4d4c69;
+        padding: 170px 15px 205px;
+        position: relative;
+        height: 680px;
+        max-height: 680px;
+
+        .content {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            width: calc(100% - 30px);
+            color: var(--white);
+
+            .top-title {
+                font-size: 1.6rem;
+                font-weight: 500;
+                text-transform: uppercase;
+                letter-spacing: 5px;
+                margin-bottom: 20px;
+            }
+
+            .title {
+                font-size: 6rem;
+                font-weight: 400;
+                text-transform: uppercase;
+                font-family: Cormorant Garamond, serif;
+                margin-bottom: 20px;
+            }
+
+            .sub-title {
+                font-size: 1.6rem;
+                font-weight: 400;
+                margin-bottom: 30px;
+            }
+
+            .button {
+                font-size: 1.2rem;
+                font-weight: 500;
+                line-height: 45px;
+                letter-spacing: 3px;
+                background-color: #000000;
+                color: currentColor;
+                padding: 0px 40px;
+                border: none;
+
+                a {
+                    text-decoration: none;
+                    color: currentColor;
+                }
+            }
+        }
+    }
+}

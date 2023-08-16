@@ -1,0 +1,33 @@
+.tippy-content {
+    padding: unset;
+}
+
+.tippy-box{
+    color: var(--black);
+}
+
+.tippy-box[data-animation='translate'][data-state='hidden'] {
+    opacity: 0;
+    transform: translateY(15px);
+}
+
+.tippy-box[data-animation='lengthen'][data-state='hidden'] {
+    opacity: 0;
+}
+
+.modal-content{
+    border-radius: unset !important;
+}
+
+/* Config slick slider */
+.slick-dots{
+    bottom: 25px !important;
+}
+
+.slick-dots button::before{
+    font-size: 12px !important;
+}
+
+.slick-dots button:hover::before{
+    color: #fff !important;
+}

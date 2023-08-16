@@ -1,0 +1,25 @@
+.wrapper{
+    padding: 15px 30px;
+
+    .list{
+
+        .list-item{
+            color: var(--grey);
+            list-style-type: none;
+            &:hover{
+                    color: var(--hover-color) !important;
+            }
+
+            a{
+                color: currentColor;
+                text-decoration: none;
+                text-transform: capitalize;
+                font-size: 1.2rem;
+                transition: all .2s linear;
+
+                
+            }
+            
+        }
+    }
+}

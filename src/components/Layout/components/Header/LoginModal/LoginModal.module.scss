@@ -1,0 +1,15 @@
+.wrapper {
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+
+    & div:first-child{
+        transition: all .2s ease-in;
+
+        &.moveLogin{
+            transform: translateX(0);
+        }
+        &.moveRegister{
+            transform: translateX(-100%);
+        }
+    }
+}
