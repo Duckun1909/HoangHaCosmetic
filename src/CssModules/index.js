@@ -17,6 +17,11 @@ import FeedbackStyles from '~/page/Home/Feedback/Feedback.module.scss';
 import FeedbackItemStyles from '~/page/Home/Feedback/FeedbackItem/FeedbackItem.module.scss';
 import TopBrandStyles from '~/page/Home/TopBrand/TopBrand.module.scss';
 import ShareMomentStyles from '~/page/Home/ShareMoments/ShareMoments.module.scss';
+import SliderStaticStyles from '~/page/AboutUs/SliderStatic/SliderStatic.module.scss';
+import BannerAbuStyles from '~/page/AboutUs/Banner/Banner.module.scss';
+import PageTitleStyles from '~/components/PageTitle/PageTitle.module.scss';
+import InformationStyles from '~/page/Contact/Information/Information.module.scss';
+import SendMessageStyles from '~/page/Contact/SendMessage/SendMessage.module.scss';
 import classNames from 'classnames/bind';
 
 function HeaderModules() {
@@ -114,6 +119,31 @@ function ShareMomentModules() {
     return cx;
 }
 
+function SliderStaticModules() {
+    const cx = classNames.bind(SliderStaticStyles);
+    return cx;
+}
+
+function BannerAbuModules() {
+    const cx = classNames.bind(BannerAbuStyles);
+    return cx;
+}
+
+function PageTitleModules() {
+    const cx = classNames.bind(PageTitleStyles);
+    return cx;
+}
+
+function InformationModules() {
+    const cx = classNames.bind(InformationStyles);
+    return cx;
+}
+
+function SendMessageModules() {
+    const cx = classNames.bind(SendMessageStyles);
+    return cx;
+}
+
 export {
     HeaderModules,
     FooterModules,
@@ -134,4 +164,9 @@ export {
     FeedbackItemModules,
     TopBrandModules,
     ShareMomentModules,
+    SliderStaticModules,
+    BannerAbuModules,
+    PageTitleModules,
+    InformationModules,
+    SendMessageModules,
 };

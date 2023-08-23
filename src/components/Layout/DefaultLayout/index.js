@@ -1,15 +1,26 @@
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import { Children, useRef, cloneElement } from 'react';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
+import { useImperativeHandle, useEffect } from 'react';
 
-function DefaultLayout({children}) {
-    return ( 
+
+function DefaultLayout({ children }) {
+    const childrenName = children.type.name
+
+    return (
         <div className="position-relative">
-            <Header />
+            <Header typeName={childrenName} />
 
             <div className="">
-                <div className="content">{children}</div>
+                <div className="content">
+                    {children}
+                    {/* {Children.map(children, (child) => {
+                        return cloneElement(child, {
+                            overlayUrl: url,
+                        });
+                    })} */}
+                </div>
             </div>
-
             <Footer />
         </div>
     );

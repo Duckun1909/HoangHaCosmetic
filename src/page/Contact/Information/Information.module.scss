@@ -1,0 +1,80 @@
+.wrapper {
+    .content {
+        padding: 20px;
+        padding-left: 100px;
+        position: relative;
+
+        .maps {
+        }
+
+        .info {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 205px;
+            z-index: 1;
+            padding: 50px;
+            background-color: var(--white);
+            min-width: calc(470px + 50px * 2);
+
+            .info-heading {
+                h3 {
+                    font-size: 30px;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    line-height: 1;
+                    font-family: Cormorant Garamond, serif;
+                    margin-bottom: 15px;
+                }
+                p {
+                    font-size: 1.4rem;
+                    font-weight: 400;
+                    line-height: 2;
+                    color: var(--grey);
+                    margin-bottom: 40px;
+                }
+            }
+            .info-item {
+                .item {
+                    display: flex;
+                    align-items: center;
+
+                    & + .item {
+                        margin-top: 25px;
+                    }
+
+                    .sign {
+                        font-size: 2.2rem;
+                        color: var(--white);
+                        padding: 22px;
+                        border-radius: 50%;
+                        background-color: var(--hover-color);
+                        max-width: 60px;
+                        max-height: 60px;
+                        text-align: center;
+                        margin-right: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .text {
+                        line-height: 22px;
+
+                        h5 {
+                            text-transform: capitalize;
+                            color: var(--black);
+                            font-weight: 600;
+                        }
+
+                        span {
+                            font-size: 1.4rem;
+                            font-weight: 400;
+                            line-height: 2;
+                            color: var(--grey);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

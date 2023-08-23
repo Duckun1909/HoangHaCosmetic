@@ -27,7 +27,8 @@ import CartPopup from './CartPopup';
 
 const cx = HeaderModules();
 
-function Header() {
+function Header({ typeName }) {
+    console.log(typeName)
     const [visible, setVisible] = useState(false);
     function handleVisible(vis) {
         setVisible(vis);
@@ -35,7 +36,6 @@ function Header() {
 
     const [menuLinkActive, setMenuLinkActive] = useState([true, false, false, false, false]);
     function toggleActvie(id) {
-        console.log(id);
         let actives = menuLinkActive.map((active, index) => {
             index === id ? (active = true) : (active = false);
             return active;
@@ -49,7 +49,7 @@ function Header() {
     }
 
     return (
-        <div className={cx('wrapper', 'container-flud')}>
+        <div className={cx('wrapper', 'container-flud', {[typeName]:true})}>
             <div className={cx('campbar')}>
                 <span className={cx('content')}>20% OFF EVERYTHING – USE CODE:FLASH20 – ENDS SUNDAY</span>
                 <button className={cx('close')}>
@@ -57,7 +57,9 @@ function Header() {
                 </button>
             </div>
 
-            <div className={cx('topbar', 'd-flex align-items-center justify-content-between pt-0 pb-0 p-4')}>
+            <div
+                className={cx('topbar', 'd-flex align-items-center justify-content-between pt-0 pb-0 p-4')}
+            >
                 <div className={cx('item')}>
                     <span className={cx('address', 'd-inline-flex align-items-center')}>
                         <FontAwesomeIcon className={cx('icon')} icon={faLocationDot} />
@@ -119,16 +121,16 @@ function Header() {
                                     >
                                         Product
                                     </Link>
-                                    <FontAwesomeIcon icon={faAngleDown} className="text-white fs-5 ms-1" />
+                                    <FontAwesomeIcon className={cx('icon', "text-white fs-5 ms-1")} icon={faAngleDown} />
                                 </li>
                             </Tippy>
                             <li className="list-group-item border-0">
                                 <Link
                                     onClick={() => toggleActvie(2)}
                                     className={cx('menu-link', 'text-decoration-none text-dark', {
-                                        active: menuLinkActive[3],
+                                        active: menuLinkActive[2],
                                     })}
-                                    to="/aboutUs"
+                                    to="/about-us"
                                 >
                                     About Us
                                 </Link>
@@ -137,9 +139,9 @@ function Header() {
                                 <Link
                                     onClick={() => toggleActvie(3)}
                                     className={cx('menu-link', 'text-decoration-none text-dark', {
-                                        active: menuLinkActive[4],
+                                        active: menuLinkActive[3],
                                     })}
-                                    to="contact"
+                                    to="/contact"
                                 >
                                     Contact
                                 </Link>
@@ -148,9 +150,9 @@ function Header() {
                                 <Link
                                     onClick={() => toggleActvie(4)}
                                     className={cx('menu-link', 'text-decoration-none text-dark', {
-                                        active: menuLinkActive[5],
+                                        active: menuLinkActive[4],
                                     })}
-                                    to="faq"
+                                    to="/faq"
                                 >
                                     Faq
                                 </Link>

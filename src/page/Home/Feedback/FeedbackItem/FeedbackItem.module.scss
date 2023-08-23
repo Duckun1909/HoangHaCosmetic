@@ -1,7 +1,7 @@
 .wrapper {
     width: 100%;
     text-align: center;
-    color: var(--white);
+    color: currentColor;
 
     .feedback-item {
         .icon {
@@ -56,7 +56,7 @@
             left: calc(50% - 25px);
             height: 1px;
             width: 50px;
-            background: #fff;
+            background: currentColor;
         }
 
         .user-image {
@@ -78,6 +78,7 @@
                 text-transform: capitalize;
                 font-size: 1.8rem;
                 font-weight: 500;
+                color: black;
             }
         }
     }

@@ -80,42 +80,44 @@
             background-color: transparent;
             margin-left: 65px;
 
-            ul li {
-                background-color: var(--transparent);
+            ul {
+                li {
+                    background-color: var(--transparent);
 
-                @keyframes menuLinkHover {
-                    to {
-                        transform: scale(1);
+                    @keyframes menuLinkHover {
+                        to {
+                            transform: scale(1);
+                        }
                     }
-                }
 
-                &:hover .menu-link::before {
-                    display: block;
-                    animation: menuLinkHover 0.3s ease-in-out forwards;
-                }
-            }
+                    &:hover .menu-link::before {
+                        display: block;
+                        animation: menuLinkHover 0.3s ease-in-out forwards;
+                    }
 
-            .menu-link {
-                font-size: 12px;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-                font-weight: 500;
-                background-color: transparent;
-                color: var(--white) !important;
+                    .menu-link {
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        font-weight: 500;
+                        background-color: transparent;
+                        color: var(--white) !important;
 
-                &::before {
-                    content: '';
-                    height: 2px;
-                    transform: scale(0);
-                    width: calc(100% - 20px);
-                    background-color: var(--white);
-                    position: absolute;
-                    bottom: 2px;
-                }
+                        &::before {
+                            content: '';
+                            height: 2px;
+                            transform: scale(0);
+                            width: calc(100% - 20px);
+                            background-color: var(--white);
+                            position: absolute;
+                            bottom: 2px;
+                        }
 
-                &.active {
-                    &::before {
-                        transform: scale(1);
+                        &.active {
+                            &::before {
+                                transform: scale(1);
+                            }
+                        }
                     }
                 }
             }
@@ -151,6 +153,57 @@
                     line-height: 15px;
                     top: -7px;
                     right: 0;
+                }
+            }
+        }
+    }
+
+    &.AboutUs {
+        position: unset;
+
+        .topbar {
+            background-color: #242424;
+            border: 0;
+        }
+        .navbar {
+            position: absolute;
+            width: 100%;
+        }
+    }
+
+    &.Contact {
+        position: unset;
+
+        .topbar {
+            background-color: #242424;
+            border: 0;
+        }
+
+        .navbar {
+            border-bottom: 1px solid #e5e5e5;
+
+            .menu {
+                li {
+                    .menu-link {
+                        color: var(--black) !important;
+
+                        &::before {
+                            background-color: var(--black);
+                        }
+                    }
+
+                    .icon{
+                        color:var(--black) !important
+                    }
+                }
+            }
+            .actions {
+                .icon {
+                    color: var(--black);
+                }
+                .cart-size {
+                    background-color: var(--black);
+                    color: var(--white);
                 }
             }
         }

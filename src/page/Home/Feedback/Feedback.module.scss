@@ -2,6 +2,7 @@
     padding: 60px 15px 110px;
     background-color: transparent !important;
     margin-top: 80px;
+    color: var(--white);
 
     .list-feedback {
         position: relative;
@@ -19,16 +20,18 @@
             transform: translateY(-50%);
             width: 100%;
             padding: 0px 15px;
+            color: var(--white);
 
             button {
                 background: transparent;
                 border: 0;
                 height: 25px;
                 width: 25px;
+                color: currentColor;
 
                 .icon {
                     line-height: 25px;
-                    color: var(--white);
+                    color: currentColor;
                     font-size: 3rem;
                     transition: all 0.3s ease-in-out;
 
@@ -45,7 +48,7 @@
     }
 
     .overlay {
-        background-image: url('https://wpbingosite.com/wordpress/cerla/wp-content/uploads/2021/01/img4-5.jpg');
+        background-image: url('');
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
