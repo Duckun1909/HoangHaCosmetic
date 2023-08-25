@@ -10,20 +10,19 @@ import { forwardRef } from 'react';
 
 const cx = FeedbackModules();
 
-function Feedback({ ref, typeName}) {
-    let url = "https://wpbingosite.com/wordpress/cerla/wp-content/uploads/2021/01/img4-5.jpg"
-    const overlayRef = useRef()
-
+function Feedback({ ref, typeName }) {
+    let url = 'https://wpbingosite.com/wordpress/cerla/wp-content/uploads/2021/01/img4-5.jpg';
+    const overlayRef = useRef();
+    
     useEffect(() => {
-        if(typeName === "Home"){
-            overlayRef.current.style.background = `url(${url})`
-        }else if(typeName === "AboutUs"){
-            overlayRef.current.style.background = "#fff"
+        if (typeName === 'Home') {
+            overlayRef.current.style.background = `url(${url})`;
+        } else if (typeName === 'AboutUs') {
+            overlayRef.current.style.background = '#fff';
         }
-    })
+    });
 
     const sliderRef = useRef();
-
 
     const settings = {
         dots: false,
@@ -35,13 +34,13 @@ function Feedback({ ref, typeName}) {
         arrows: false,
     };
 
-    let configStyle
-    if(typeName === "AboutUs"){
+    let configStyle;
+    if (typeName === 'AboutUs') {
         configStyle = {
-            wrapper: {borderBottom: "1px solid #E5E5E5"},
-            slider: {color: "var(--grey)", },
-            sliderArrow: {color: "var(--black)"}
-        }
+            wrapper: { borderBottom: '1px solid #E5E5E5' },
+            slider: { color: 'var(--grey)' },
+            sliderArrow: { color: 'var(--black)' },
+        };
     }
 
     return (

@@ -22,6 +22,7 @@ import BannerAbuStyles from '~/page/AboutUs/Banner/Banner.module.scss';
 import PageTitleStyles from '~/components/PageTitle/PageTitle.module.scss';
 import InformationStyles from '~/page/Contact/Information/Information.module.scss';
 import SendMessageStyles from '~/page/Contact/SendMessage/SendMessage.module.scss';
+import SideBarStyles from '~/page/Product/SideBar/SideBar.module.scss';
 import classNames from 'classnames/bind';
 
 function HeaderModules() {
@@ -144,6 +145,11 @@ function SendMessageModules() {
     return cx;
 }
 
+function SideBarModules() {
+    const cx = classNames.bind(SideBarStyles);
+    return cx;
+}
+
 export {
     HeaderModules,
     FooterModules,
@@ -169,4 +175,5 @@ export {
     PageTitleModules,
     InformationModules,
     SendMessageModules,
+    SideBarModules,
 };

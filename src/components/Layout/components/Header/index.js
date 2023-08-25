@@ -28,7 +28,6 @@ import CartPopup from './CartPopup';
 const cx = HeaderModules();
 
 function Header({ typeName }) {
-    console.log(typeName)
     const [visible, setVisible] = useState(false);
     function handleVisible(vis) {
         setVisible(vis);

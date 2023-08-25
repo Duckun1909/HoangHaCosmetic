@@ -1,9 +1,8 @@
 .wrapper {
-    border-bottom: 1px solid hsla(0, 0%, 6%, 0.15);
-
     .content {
         text-align: center;
         padding: 35px 0px;
+        border-bottom: 1px solid hsla(0, 0%, 6%, 0.15);
 
         .title {
             text-transform: capitalize;
@@ -28,6 +27,24 @@
             .currentPage {
                 text-transform: capitalize;
                 color: var(--grey);
+            }
+        }
+
+        &.shop {
+            padding-top: 125px;
+            margin-bottom: 50px;
+            padding-bottom: 45px;
+            background-position: 50%;
+            background-size: cover;
+
+            .title {
+                color: var(--white);
+            }
+
+            .backPage,
+            .delimiter,
+            .currentPage {
+                color: var(--white);
             }
         }
     }

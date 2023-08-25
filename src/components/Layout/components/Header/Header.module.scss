@@ -158,7 +158,7 @@
         }
     }
 
-    &.AboutUs {
+    &.AboutUs, &.Product {
         position: unset;
 
         .topbar {
@@ -168,6 +168,12 @@
         .navbar {
             position: absolute;
             width: 100%;
+        }
+    }
+
+    &.Product{
+        .navbar{
+            border-bottom: 1px solid hsla(0,0%,100%,.15);
         }
     }
 

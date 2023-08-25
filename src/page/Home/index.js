@@ -15,7 +15,7 @@ function Home() {
             <TopCategory />
             <Banner />
             <TrendingProducts />
-            <Feedback />
+            <Feedback typeName="Home" />
             <TopBrand />
             <ShareMoments />
         </div>
