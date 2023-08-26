@@ -1,12 +1,16 @@
-import PageTitle from "~/components/PageTitle";
-import SideBar from "./SideBar";
+import PageTitle from '~/components/PageTitle';
+import SideBar from './SideBar';
+import ListProduct from './ListProduct';
 
 function Product() {
-    return ( 
+    return (
         <div>
             <PageTitle currentPage="shop" />
-            <div className="container-fluid" style={{maxWidth: "93%"}}>
-                <SideBar />
+            <div className="container-fluid" style={{ maxWidth: '93%' }}>
+                <div className='row'>
+                    <SideBar />
+                    <ListProduct />
+                </div>
             </div>
         </div>
     );

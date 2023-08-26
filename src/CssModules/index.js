@@ -23,6 +23,7 @@ import PageTitleStyles from '~/components/PageTitle/PageTitle.module.scss';
 import InformationStyles from '~/page/Contact/Information/Information.module.scss';
 import SendMessageStyles from '~/page/Contact/SendMessage/SendMessage.module.scss';
 import SideBarStyles from '~/page/Product/SideBar/SideBar.module.scss';
+import ListProductStyles from '~/page/Product/ListProduct/ListProduct.module.scss';
 import classNames from 'classnames/bind';
 
 function HeaderModules() {
@@ -150,6 +151,11 @@ function SideBarModules() {
     return cx;
 }
 
+function ListProductModules() {
+    const cx = classNames.bind(ListProductStyles);
+    return cx;
+}
+
 export {
     HeaderModules,
     FooterModules,
@@ -176,4 +182,5 @@ export {
     InformationModules,
     SendMessageModules,
     SideBarModules,
+    ListProductModules,
 };

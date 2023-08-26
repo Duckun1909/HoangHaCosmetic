@@ -26,7 +26,7 @@ body {
     --campbar-bg: #424cc7;
     --grey: #868686;
     --gray: #b9b9b9;
-    --yewllow:#ffc107;
+    --yewllow: #ffc107;
 }
 
 .outline-0 {
@@ -37,7 +37,9 @@ button {
     &.hover-default:hover {
         background-color: var(--hover-color) !important;
     }
-
+    &.hover-default-text:hover {
+        color: var(--hover-color) !important;
+    }
     &.hover-fade:hover {
         transition: all 0.3s;
         background-color: var(--hover-color) !important;
@@ -68,19 +70,19 @@ button {
             top: auto;
         }
 
-        &:hover{
+        &:hover {
             transition: all 0.3s ease-in-out;
             background-color: transparent !important;
         }
     }
 
-    &.hover-fade-white:hover{
+    &.hover-fade-white:hover {
         background-color: var(--white) !important;
         color: var(--black) !important;
     }
 }
 
-.wrapper-item+.wrapper-item{
+.wrapper-item + .wrapper-item {
     padding-top: 80px;
     background-color: var(--white);
 }
