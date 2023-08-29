@@ -14,7 +14,7 @@ function Home() {
             <Sliders />
             <TopCategory />
             <Banner />
-            <TrendingProducts />
+            <TrendingProducts titleComponent="trending products" />
             <Feedback typeName="Home" />
             <TopBrand />
             <ShareMoments />

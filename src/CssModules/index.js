@@ -24,6 +24,8 @@ import InformationStyles from '~/page/Contact/Information/Information.module.scs
 import SendMessageStyles from '~/page/Contact/SendMessage/SendMessage.module.scss';
 import SideBarStyles from '~/page/Product/SideBar/SideBar.module.scss';
 import ListProductStyles from '~/page/Product/ListProduct/ListProduct.module.scss';
+import ProductInfoStyles from '~/page/ProductDetail/ProductInfo/ProductInfo.module.scss';
+import ReviewProductStyles from '~/page/ProductDetail/ProductInfo/ReviewProduct/ReviewProduct.module.scss';
 import classNames from 'classnames/bind';
 
 function HeaderModules() {
@@ -156,6 +158,16 @@ function ListProductModules() {
     return cx;
 }
 
+function ProductInfoModules() {
+    const cx = classNames.bind(ProductInfoStyles);
+    return cx;
+}
+
+function ReviewProductModules() {
+    const cx = classNames.bind(ReviewProductStyles);
+    return cx;
+}
+
 export {
     HeaderModules,
     FooterModules,
@@ -183,4 +195,6 @@ export {
     SendMessageModules,
     SideBarModules,
     ListProductModules,
+    ProductInfoModules,
+    ReviewProductModules,
 };

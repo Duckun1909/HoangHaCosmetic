@@ -9,7 +9,7 @@ import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
 const cx = TrendingProductsModules();
 
-function TrendingProducts() {
+function TrendingProducts({titleComponent}) {
     const sliderRef = useRef();
 
     const settings = {
@@ -25,7 +25,7 @@ function TrendingProducts() {
     return (
         <div className={cx('wrapper', 'wrapper-item')}>
             <div className={cx('title')}>
-                <h3>trending products</h3>
+                <h3>{titleComponent}</h3>
             </div>
 
             <div className={cx('list')}>

@@ -11,7 +11,7 @@ function DefaultLayout({ children }) {
         <div className="position-relative">
             <Header typeName={childrenName} />
 
-            <div className="">
+            <div className="main">
                 <div className="content">
                     {children}
                     {/* {Children.map(children, (child) => {

@@ -158,7 +158,8 @@
         }
     }
 
-    &.AboutUs, &.Product {
+    &.AboutUs,
+    &.Product {
         position: unset;
 
         .topbar {
@@ -171,13 +172,14 @@
         }
     }
 
-    &.Product{
-        .navbar{
-            border-bottom: 1px solid hsla(0,0%,100%,.15);
+    &.Product {
+        .navbar {
+            border-bottom: 1px solid hsla(0, 0%, 100%, 0.15);
         }
     }
 
-    &.Contact {
+    &.Contact,
+    &.ProductDetail {
         position: unset;
 
         .topbar {
@@ -198,8 +200,8 @@
                         }
                     }
 
-                    .icon{
-                        color:var(--black) !important
+                    .icon {
+                        color: var(--black) !important;
                     }
                 }
             }

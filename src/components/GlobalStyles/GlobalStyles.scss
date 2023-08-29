@@ -80,6 +80,11 @@ button {
         background-color: var(--white) !important;
         color: var(--black) !important;
     }
+
+    &.hover-background-text:hover{
+        background-color: var(--hover-color) !important;
+        color: var(--white) !important;
+    }
 }
 
 .wrapper-item + .wrapper-item {
