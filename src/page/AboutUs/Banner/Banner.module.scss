@@ -7,6 +7,30 @@
         padding: 190px 15px 160px;
         display: flex;
 
+        &.contentRight {
+            justify-content: end;
+            background-position: center left;
+        }
+
+        @media screen and (max-width: 1199px) {
+            background-position: center center !important;
+            padding: 100px 0;
+        }
+
+        @media screen and (min-width: 769px) {
+            div.text-content {
+                padding: 20px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            div.text-content {
+                max-width: 100%;
+                padding-right: 50px;
+                padding-left: 50px;
+            }
+        }
+
         .text-content {
             max-width: 50%;
             padding-right: 100px;
@@ -21,7 +45,7 @@
                 margin-bottom: 15px;
             }
             .heading {
-                font-size: 5rem;
+                font-size: clamp(2.5rem, 2vw + 1rem, 5rem);;
                 font-weight: 400;
                 text-transform: uppercase;
                 line-height: 1;
@@ -46,7 +70,7 @@
                 padding: 0px 30px;
                 border: 0;
 
-                a{
+                a {
                     color: var(--white);
                     text-decoration: none;
                 }

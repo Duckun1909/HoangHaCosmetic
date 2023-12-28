@@ -7,13 +7,13 @@ function SendMessage() {
         <div className={cx('wrapper', 'container-fluid')}>
             <div className={cx('content', 'row')}>
                 <div className="col"></div>
-                <div className={cx('form-data', 'col')}>
+                <div className={cx('form-data', 'col-12 col-sm-12 col-md-6')}>
                     <h3 className={cx('heading')}>send us a message</h3>
 
                     <form className={cx('form')}>
                         <div className="row g-0">
-                            <input className={cx('form-input', 'col')} name="cus_name" placeholder="Your name" />
-                            <input className={cx('form-input', 'col')} name="cus_email" placeholder="Your email" />
+                            <input className={cx('form-input', 'col-12 col-sm-12 col-md-6')} name="cus_name" placeholder="Your name" />
+                            <input className={cx('form-input', 'col-12 col-sm-12 col-md-6')} name="cus_email" placeholder="Your email" />
                         </div>
 
                         <textarea className={cx('form-textarea')} name="cus_message" placeholder="Your message..." />

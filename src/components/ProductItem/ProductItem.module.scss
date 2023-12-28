@@ -1,7 +1,7 @@
 .wrapper {
     width: 100%;
     height: 100%;
-    padding: 20px;
+    margin-bottom: 20px;
 
     &:hover {
         .prd-buttons {
@@ -22,6 +22,7 @@
             position: absolute;
             top: 0;
             width: 100%;
+            z-index: 0;
 
             .featured,
             .onsale {
@@ -48,6 +49,15 @@
                 background-color: #ff0404;
                 left: 10px;
             }
+
+            // @media screen and (max-width: 376px) {
+            //     .featured {
+            //         right: -15px;
+            //     }
+            //     .onsale {
+            //         left: -15px;
+            //     }
+            // }
         }
 
         .prd-image {
@@ -67,8 +77,8 @@
             .item {
                 display: block;
                 color: var(--black);
-                width: 45px;
-                height: 45px;
+                width: 3.5rem;
+                height: 3.5rem;
                 background-color: var(--white);
                 transition: background-color 0.2s ease-in-out;
                 margin-bottom: 5px;
@@ -103,6 +113,16 @@
                 &.search {
                     transition-delay: 0.2s;
                 }
+
+                @media screen and (max-width: 992px) {
+                    &.search {
+                        display: none;
+                    }
+
+                    .icon {
+                        vertical-align: super;
+                    }
+                }
             }
         }
     }
@@ -134,6 +154,7 @@
 
                 .star-rating {
                     margin-right: 10px;
+                    white-space: nowrap;
 
                     .icon {
                         color: var(--gray);

@@ -37,6 +37,10 @@
             background-position: 50%;
             background-size: cover;
 
+            @media screen and (max-width: 992px) {
+                padding-top: 45px;
+            }
+
             .title {
                 color: var(--white);
             }

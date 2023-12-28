@@ -5,6 +5,26 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                gap: 10px;
+
+                .show-filter {
+                    display: none;
+
+                    &:hover {
+                        cursor: pointer;
+                        background-color: var(--black);
+                        color: var(--white);
+                    }
+                }
+
+                @media screen and (max-width: 992px) {
+                    .show-filter {
+                        display: block;
+                    }
+                    .result-count {
+                        display: none;
+                    }
+                }
 
                 .result-count {
                     color: var(--grey);
@@ -40,6 +60,7 @@
 
                     .sort-type {
                         select {
+                            width: 100%;
                             border: 1px solid #000;
                             display: inline-block;
                             line-height: 34px;

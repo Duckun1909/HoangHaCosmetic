@@ -8,7 +8,7 @@ function Banner() {
     return (
         <div className={cx('wrapper', 'wrapper-item container-flud')}>
             <div className="row g-0">
-                <div className={cx('item', 'col-6', { 'banner-static': true })}>
+                <div className={cx('item', 'col-12 col-sm-12 col-md-6', { 'banner-static': true })}>
                     <Link className={cx('img')}>
                         <img
                             width="100%"
@@ -23,7 +23,7 @@ function Banner() {
                         <Link className={cx('gotoshop')}>shop now</Link>
                     </div>
                 </div>
-                <div className={cx('item', 'col-6', { 'banner-static': true })}>
+                <div className={cx('item', 'col-12 col-sm-12 col-md-6', { 'banner-static': true })}>
                     <Link className={cx('img')}>
                         <img
                             width="100%"
@@ -38,7 +38,7 @@ function Banner() {
                         <Link className={cx('gotoshop')}>shop now</Link>
                     </div>
                 </div>
-                <div className={cx('item', 'col-6', { 'banner-bestseller': true })}>
+                <div className={cx('item', 'col-12 col-sm-12 col-md-6', { 'banner-bestseller': true })}>
                     <div className={cx('img')}></div>
 
                     <div className={cx('content')}>
@@ -48,7 +48,7 @@ function Banner() {
                         </div>
                     </div>
                 </div>
-                <div className={cx('item', 'col-6', { 'banner-products': true })}>
+                <div className={cx('item', 'col-12 col-sm-12 col-md-6', { 'banner-products': true })}>
                     <div className="container-fluid">
                         <div className="row">
                             <div className="col-6">
@@ -66,8 +66,8 @@ function Banner() {
                         </div>
                     </div>
                 </div>
-                <div className={cx('item', 'col-6', { 'banner-onlyimage': true })}></div>
-                <div className={cx('item', 'col-6', { 'banner-widget': true })}>
+                <div className={cx('item', 'col-12 col-sm-12 col-md-6', { 'banner-onlyimage': true })}></div>
+                <div className={cx('item', 'col-12 col-sm-12 col-md-6', { 'banner-widget': true })}>
                     <div className={cx('content')}>
                         <h5 className={cx('top-title')}>SALE UP TO 30% OFF</h5>
                         <h2 className={cx('title')}>NEW & <br/> EXCLUSIVE</h2>

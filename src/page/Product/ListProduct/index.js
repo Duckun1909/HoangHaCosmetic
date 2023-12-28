@@ -1,17 +1,24 @@
 import { ListProductModules } from '~/CssModules';
-import { Grid3x3GapFill } from 'react-bootstrap-icons';
+import { Grid3x3GapFill, Sliders2Vertical } from 'react-bootstrap-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGripVertical, faList, faXmark } from '@fortawesome/free-solid-svg-icons';
 import ProductItem from '~/components/ProductItem';
 
 const cx = ListProductModules();
 
-function ListProduct() {
+function ListProduct({ setShowSidebar }) {
     return (
-        <div className={cx('wrapper', 'col-9')}>
+        <div className={cx('wrapper', 'col-12 col-sm-12 col-lg-9')}>
             <div className={cx('content')}>
                 <div className={cx('top-bar')}>
                     <div className={cx('sorting')}>
+                        <div    
+                            onClick={() => setShowSidebar(true)}
+                            className={cx('show-filter', 'border border-dark border-2 p-2')}
+                        >
+                            <Sliders2Vertical className="fs-1" />
+                        </div>
+
                         <div className={cx('result-count')}>
                             <span>Showing the single result</span>
                         </div>
@@ -46,19 +53,19 @@ function ListProduct() {
                 </div>
 
                 <div className={cx('product-list', 'row')}>
-                    <div className="col-4">
+                    <div className="col-6 col-sm-6 col-md-4">
                         <ProductItem />
                     </div>
-                    <div className="col-4">
+                    <div className="col-6 col-sm-6 col-md-4">
                         <ProductItem />
                     </div>
-                    <div className="col-4">
+                    <div className="col-6 col-sm-6 col-md-4">
                         <ProductItem />
                     </div>
-                    <div className="col-4">
+                    <div className="col-6 col-sm-6 col-md-4">
                         <ProductItem />
                     </div>
-                    <div className="col-4">
+                    <div className="col-6 col-sm-6 col-md-4">
                         <ProductItem />
                     </div>
                 </div>

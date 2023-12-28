@@ -4,8 +4,8 @@ import Header from '../components/Header';
 import { useImperativeHandle, useEffect } from 'react';
 
 
-function DefaultLayout({ children }) {
-    const childrenName = children.type.name
+function DefaultLayout({ children, name }) {
+    const childrenName = name
 
     return (
         <div className="position-relative">

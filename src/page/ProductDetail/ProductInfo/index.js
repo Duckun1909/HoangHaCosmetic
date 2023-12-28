@@ -28,7 +28,7 @@ function ProductInfo() {
             <div className={cx('content')}>
                 <div className={cx('prd-info', 'container')}>
                     <div className="row">
-                        <div className={cx('thumb', 'col-7')}>
+                        <div className={cx('thumb', 'col-12 col-sm-12 col-md-7')}>
                             <div className={cx('prd-image')}>
                                 <TransformWrapper>
                                     <TransformComponent>
@@ -65,7 +65,7 @@ function ProductInfo() {
                             </div>
                         </div>
 
-                        <div className={cx('sum', 'col-5')}>
+                        <div className={cx('sum', 'col-12 col-sm-12 col-md-5')}>
                             <div className={cx('prd-dir')}>
                                 <Link to="/">home </Link>
                                 &gt;

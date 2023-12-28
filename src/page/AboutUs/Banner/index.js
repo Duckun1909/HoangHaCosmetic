@@ -8,16 +8,14 @@ function Banner({ contentRight }) {
     if (contentRight) {
         configContent = {
             content: {
-                flexFlow: 'row-reverse', 
                 backgroundImage: "url(https://wpbingosite.com/wordpress/cerla/wp-content/uploads/2021/01/about-3.jpg)",
-                backgroundPosition: "center left"
             },
         };
     }
 
     return (
         <div className={cx('wrapper')}>
-            <div style={configContent?.content} className={cx('content')}>
+            <div style={configContent?.content} className={cx('content', {'contentRight': contentRight})}>
                 <div className={cx('text-content')}>
                     <h5 className={cx('title')}>LOOK GOOD & FEEL GOOD</h5>
                     <h2 className={cx('heading')}>

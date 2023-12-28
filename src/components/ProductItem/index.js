@@ -27,13 +27,13 @@ function ProductItem({ active }) {
                     src="https://wpbingosite.com/wordpress/cerla/wp-content/webp-express/webp-images/uploads/2018/05/BLUEBERRY-LUDICROUS-LIP-1020x1020.jpg.webp"
                 />
                 <div className={cx('prd-buttons')}>
-                    <Link className={cx('item')}>
+                    <Link to="/productdetail" className={cx('item')}>
                         <FontAwesomeIcon className={cx('icon', { 'prd-detail': true })} icon={faArrowRightLong} />
                     </Link>
-                    <div className={cx('item', { wishlist: true, active: active })}>
+                    <div className={cx('item', { 'wishlist': true, 'active': active })}>
                         <FontAwesomeIcon className={cx('icon')} icon={faHeart} />
                     </div>
-                    <div onClick={() => handleProductPreview(true)} className={cx('item', { search: true })}>
+                    <div onClick={() => handleProductPreview(true)} className={cx('item', { 'search': true })}>
                         <FontAwesomeIcon className={cx('icon')} icon={faMagnifyingGlass} />
                     </div>
                     <ProductPreview visible={productPreviewVisible} handleVisible={handleProductPreview} />
@@ -56,7 +56,7 @@ function ProductItem({ active }) {
                 </div>
 
                 <h3 className={cx('prd-title')}>
-                    <Link>blueberry ludicrous lip</Link>
+                    <Link to="/productdetail">blueberry ludicrous lip</Link>
                 </h3>
 
                 <div className={cx('prd-price')}>

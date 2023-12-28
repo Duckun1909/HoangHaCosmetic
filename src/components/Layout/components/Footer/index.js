@@ -12,7 +12,7 @@ function Footer() {
             <div className={cx('content-start')}>
                 <div className="container-flud m-5 mt-0 mb-0">
                     <div className="row">
-                        <div className={cx('item', 'col')}>
+                        <div className={cx('item', 'col-12 col-sm-6 col-md-3')}>
                             <h3 className={cx('title')}>categories</h3>
                             <div className={cx('list')}>
                                 <ul className="list-group">
@@ -40,7 +40,7 @@ function Footer() {
                                 </ul>
                             </div>
                         </div>
-                        <div className={cx('item', 'col')}>
+                        <div className={cx('item', 'col-12 col-sm-6 col-md-3')}>
                             <h3 className={cx('title')}>customer service</h3>
                             <div className={cx('list')}>
                                 <ul className="list-group">
@@ -65,7 +65,7 @@ function Footer() {
                                 </ul>
                             </div>
                         </div>
-                        <div className={cx('item', 'col')}>
+                        <div className={cx('item', 'col-12 col-sm-6 col-md-3')}>
                             <h3 className={cx('title')}>about us</h3>
                             <div className={cx('list')}>
                                 <ul className="list-group">
@@ -87,8 +87,8 @@ function Footer() {
                                 </ul>
                             </div>
                         </div>
-                        <div className={cx('item', 'col')}>
-                            <h3 className={cx('title')}>categories</h3>
+                        <div className={cx('item', 'col-12 col-sm-6 col-md-3')}>
+                            <h3 className={cx('title')}>newletters</h3>
                             <div className={cx('content')}>
                                 <h5 className={cx('heading')}>
                                     Sign up for our mailing list to be the first to receive updates from us about new

@@ -27,7 +27,7 @@
 
         .content {
             position: absolute;
-            z-index: 1;
+            z-index: 0;
             color: var(--white);
             text-align: center;
             top: 50%;
@@ -184,6 +184,17 @@
                     text-decoration: none;
                     color: currentColor;
                 }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .wrapper{
+        .item.banner-bestseller {
+            .img{
+                padding-top: 180px;
+                padding-bottom: 180px;
             }
         }
     }

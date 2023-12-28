@@ -9,7 +9,7 @@ import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
 const cx = TrendingProductsModules();
 
-function TrendingProducts({titleComponent}) {
+function TrendingProducts({ titleComponent }) {
     const sliderRef = useRef();
 
     const settings = {
@@ -20,6 +20,26 @@ function TrendingProducts({titleComponent}) {
         swipeToSlide: true,
         arrows: false,
         swipe: true,
+        responsive: [
+            {
+                breakpoint: 1023,
+                settings: {
+                    slidesToShow: 3,
+                },
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 4,
+                },
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+        ],
     };
 
     return (
@@ -30,12 +50,21 @@ function TrendingProducts({titleComponent}) {
 
             <div className={cx('list')}>
                 <Slider ref={sliderRef} {...settings}>
-                    <ProductItem />
-                    <ProductItem />
-                    <ProductItem />
-                    <ProductItem />
-                    <ProductItem />
-                    <ProductItem />
+                    <div className="p-3 pt-0 pb-0">
+                        <ProductItem />
+                    </div>
+                    <div className="p-3 pt-0 pb-0">
+                        <ProductItem />
+                    </div>
+                    <div className="p-3 pt-0 pb-0">
+                        <ProductItem />
+                    </div>
+                    <div className="p-3 pt-0 pb-0">
+                        <ProductItem />
+                    </div>
+                    <div className="p-3 pt-0 pb-0">
+                        <ProductItem />
+                    </div>
                 </Slider>
                 <div className={cx('slider-arrows')}>
                     <button onClick={() => sliderRef.current.slickPrev()} className={cx('btn-prev')}>

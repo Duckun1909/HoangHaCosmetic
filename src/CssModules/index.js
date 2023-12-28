@@ -6,6 +6,7 @@ import Formstyles from '~/components/Form/Forms.module.scss';
 import LoginModalstyles from '~/components/Layout/components/Header/LoginModal/LoginModal.module.scss';
 import UserMenustyles from '~/components/Layout/components/Header/UserMenu/UserMenu.module.scss';
 import CartPopupstyles from '~/components/Layout/components/Header/CartPopup/CartPopup.module.scss';
+import CartItemstyles from '~/components/Layout/components/Header/CartPopup/CartItem/CartItem.module.scss';
 import Sliderstyles from '~/page/Home/Sliders/Sliders.module.scss';
 import TopCateStyles from '~/page/Home/TopCategory/TopCategory.module.scss';
 import BannerStyles from '~/page/Home/Banner/Banner.module.scss';
@@ -26,6 +27,10 @@ import SideBarStyles from '~/page/Product/SideBar/SideBar.module.scss';
 import ListProductStyles from '~/page/Product/ListProduct/ListProduct.module.scss';
 import ProductInfoStyles from '~/page/ProductDetail/ProductInfo/ProductInfo.module.scss';
 import ReviewProductStyles from '~/page/ProductDetail/ProductInfo/ReviewProduct/ReviewProduct.module.scss';
+import HeadingBillingStyles from '~/page/Billing/Heading/Heading.module.scss';
+import ShoppingCartStyles from '~/page/Billing/ShoppingCart/ShoppingCart.module.scss';
+import CheckoutStyles from '~/page/Billing/Checkout/Checkout.module.scss';
+import WishListStyles from "~/page/WishList/WishList.module.scss"
 import classNames from 'classnames/bind';
 
 function HeaderModules() {
@@ -168,6 +173,31 @@ function ReviewProductModules() {
     return cx;
 }
 
+function HeadingBillingModules() {
+    const cx = classNames.bind(HeadingBillingStyles);
+    return cx;
+}
+
+function ShoppingCartModules() {
+    const cx = classNames.bind(ShoppingCartStyles);
+    return cx;
+}
+
+function CheckoutModules() {
+    const cx = classNames.bind(CheckoutStyles);
+    return cx;
+}
+
+function CartItemModules() {
+    const cx = classNames.bind(CartItemstyles);
+    return cx;
+}
+
+function WishListModules() {
+    const cx = classNames.bind(WishListStyles);
+    return cx;
+}
+
 export {
     HeaderModules,
     FooterModules,
@@ -197,4 +227,9 @@ export {
     ListProductModules,
     ProductInfoModules,
     ReviewProductModules,
+    HeadingBillingModules,
+    ShoppingCartModules,
+    CheckoutModules,
+    CartItemModules,
+    WishListModules,
 };

@@ -44,6 +44,9 @@
 
         .tab-review {
             padding-left: 200px;
+            @media screen and (max-width: 992px) {
+                padding-left: 0;
+            }
 
             .comments {
                 margin-bottom: 40px;
@@ -147,6 +150,17 @@
                     @include starRating(unset, 1.6rem, 15px, var(--yewllow));
                 }
                 .cmt-form {
+                    @media screen and (max-width: 768px) {
+                        flex-direction: column-reverse;
+                        gap: 25px;
+
+                        .cmt-form-text {
+                            textarea[name='respone'] {
+                                height: 120px !important;
+                            }
+                        }
+                    }
+
                     .cmt-form-info {
                         .item {
                             padding: 14px 20px;

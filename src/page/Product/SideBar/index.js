@@ -2,10 +2,12 @@ import { SideBarModules } from '~/CssModules';
 import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
 import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 const cx = SideBarModules();
 
-function SideBar() {
+function SideBar({ showSidebar, setShowSidebar }) {
     const [priceFilter, setPriceFilter] = useState(100);
 
     const handlePriceFilter = (currentPrice) => {
@@ -14,9 +16,17 @@ function SideBar() {
     };
 
     return (
-        <div className={cx('wrapper', 'col-3')}>
+        <div className={cx('wrapper', 'col-8 col-sm-6 col-md-4 col-lg-3', { show: showSidebar })}>
             <div className={cx('content')}>
-                <aside>
+                <aside> 
+                    <div
+                        onClick={() => setShowSidebar(false)}
+                        className={cx('hide-filter', 'mb-5 fs-5 me-3 text-uppercase text-hover')}
+                    >
+                        <span>close</span>
+                        <FontAwesomeIcon className="fs-4 ms-2" icon={faXmark} />
+                    </div>
+
                     <div className={cx('siderbar-filter', { 'sidebar-filter-category': true })}>
                         <h3 className={cx('title')}>categories</h3>
                         <div className={cx('main')}>
@@ -90,35 +100,35 @@ function SideBar() {
                     <div className={cx('siderbar-filter', { 'sidebar-filter-brand': true })}>
                         <h3 className={cx('title')}>brands</h3>
                         <div className={cx('main')}>
-                            <ul className="row row-cols-2 p-0 g-0">
-                                <li className="list-group-item col-4 text-center mb-3 me-3">
-                                    <input className='d-none' type='checkbox' id='brand1' />
+                            <ul className="row p-0">
+                                <li className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-4 text-center mb-3">
+                                    <input className="d-none" type="checkbox" id="brand1" />
                                     <label for="brand1">
-                                        <img width={100} src="https://wpbingosite.com/wordpress/cerla/wp-content/uploads/2021/02/brand-1.jpg" />
+                                        <img src="https://wpbingosite.com/wordpress/cerla/wp-content/uploads/2021/02/brand-1.jpg" />
                                     </label>
                                 </li>
-                                <li className="list-group-item col-4 text-center mb-3 me-3">
-                                    <input className='d-none' type='checkbox' id='brand2' />
+                                <li className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-4 text-center mb-3">
+                                    <input className="d-none" type="checkbox" id="brand2" />
                                     <label for="brand2">
-                                        <img width={100} src="https://wpbingosite.com/wordpress/cerla/wp-content/uploads/2021/02/brand-2.jpg" />
+                                        <img src="https://wpbingosite.com/wordpress/cerla/wp-content/uploads/2021/02/brand-2.jpg" />
                                     </label>
                                 </li>
-                                <li className="list-group-item col-4 text-center mb-3 me-3">
-                                    <input className='d-none' type='checkbox' id='brand3' />
+                                <li className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-4 text-center mb-3">
+                                    <input className="d-none" type="checkbox" id="brand3" />
                                     <label for="brand3">
-                                        <img width={100} src="https://wpbingosite.com/wordpress/cerla/wp-content/uploads/2021/02/brand-3.jpg" />
+                                        <img src="https://wpbingosite.com/wordpress/cerla/wp-content/uploads/2021/02/brand-3.jpg" />
                                     </label>
                                 </li>
-                                <li className="list-group-item col-4 text-center mb-3 me-3">
-                                    <input className='d-none' type='checkbox' id='brand4' />
+                                <li className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-4 text-center mb-3">
+                                    <input className="d-none" type="checkbox" id="brand4" />
                                     <label for="brand4">
-                                        <img width={100} src="https://wpbingosite.com/wordpress/cerla/wp-content/uploads/2021/02/brand-4.jpg" />
+                                        <img src="https://wpbingosite.com/wordpress/cerla/wp-content/uploads/2021/02/brand-4.jpg" />
                                     </label>
                                 </li>
-                                <li className="list-group-item col-4 text-center mb-3 me-3">
-                                    <input className='d-none' type='checkbox' id='brand5' />
+                                <li className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-4 text-center mb-3">
+                                    <input className="d-none" type="checkbox" id="brand5" />
                                     <label for="brand5">
-                                        <img width={100} src="https://wpbingosite.com/wordpress/cerla/wp-content/uploads/2021/02/brand-5.jpg" />
+                                        <img src="https://wpbingosite.com/wordpress/cerla/wp-content/uploads/2021/02/brand-5.jpg" />
                                     </label>
                                 </li>
                             </ul>

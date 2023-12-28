@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.4ef0dd27.css",
-    "main.js": "./static/js/main.bcd6eb6f.js",
+    "main.css": "./static/css/main.dd805340.css",
+    "main.js": "./static/js/main.3e74f652.js",
     "static/js/787.329fff05.chunk.js": "./static/js/787.329fff05.chunk.js",
     "static/media/logo_khong_nen.png": "./static/media/logo_khong_nen.656b81872589fe40fe4f.png",
     "static/media/PhotoRoom_20230619_154523.jpg": "./static/media/PhotoRoom_20230619_154523.95ad9e7d2d2bf9200f99.jpg",
@@ -17,12 +17,12 @@
     "static/media/slick.ttf": "./static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "./static/media/slick.295183786cd8a1389865.woff",
     "index.html": "./index.html",
-    "main.4ef0dd27.css.map": "./static/css/main.4ef0dd27.css.map",
-    "main.bcd6eb6f.js.map": "./static/js/main.bcd6eb6f.js.map",
+    "main.dd805340.css.map": "./static/css/main.dd805340.css.map",
+    "main.3e74f652.js.map": "./static/js/main.3e74f652.js.map",
     "787.329fff05.chunk.js.map": "./static/js/787.329fff05.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ef0dd27.css",
-    "static/js/main.bcd6eb6f.js"
+    "static/css/main.dd805340.css",
+    "static/js/main.3e74f652.js"
   ]
 }

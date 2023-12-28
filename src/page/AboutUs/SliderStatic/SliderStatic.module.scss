@@ -10,7 +10,7 @@
 
         h1 {
             color: #ffffff00;
-            font-size: 20rem;
+            font-size: clamp(14rem, 2vw + 1rem, 20rem);;
             text-transform: uppercase;
             font-family: Cormorant Garamond, serif;
             font-weight: 500;
@@ -20,7 +20,7 @@
 
         h2 {
             color: var(--white);
-            font-size: 100px;
+            font-size: clamp(4rem, 2vw + 1rem, 10rem);
             text-transform: uppercase;
             font-family: Cormorant Garamond, serif;
         }

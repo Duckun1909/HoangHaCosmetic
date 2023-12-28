@@ -1,5 +1,38 @@
 .wrapper {
+    @media screen and (max-width: 992px) {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        bottom: 0;
+        background-color: var(--white);
+        z-index: 10;
+        overflow-y: scroll;
+        transition: all 0.5s linear;
+        padding-top: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 100vh;
+    }
+
+    &.show {
+        left: 0;
+    }
+
     .content {
+        .hide-filter {
+            display: none;
+            text-align: right;
+            cursor: pointer;
+
+            @media screen and (max-width: 992px) {
+                display: block;
+            }
+
+            @media screen and (min-width: 993px) {
+                display: none;
+            }
+        }
+
         .siderbar-filter {
             .title {
                 color: var(--black);
@@ -58,13 +91,18 @@
             &.sidebar-filter-brand {
                 ul {
                     li {
-                        width: fit-content;
+                        list-style-type: none;
 
                         label {
                             border: 1px solid #ddd;
+                            cursor: pointer;
 
-                            &:hover {
-                                border-color: var(--black);
+                            // &:hover {
+                            //     border-color: var(--black);
+                            // }
+
+                            img {
+                                width: 100%;
                             }
                         }
 

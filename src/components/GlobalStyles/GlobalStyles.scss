@@ -11,6 +11,12 @@ html {
     font-size: 62.5%;
 }
 
+@media  only screen and (max-width: 992px) {
+    html{
+        font-size: 50%;
+    }
+}
+
 body {
     font-size: 1.2rem;
     line-height: 1.5;
@@ -25,6 +31,7 @@ body {
     --hover-color: #be0f34;
     --campbar-bg: #424cc7;
     --grey: #868686;
+    --lg-grey: #e8e8e8;
     --gray: #b9b9b9;
     --yewllow: #ffc107;
 }
@@ -47,6 +54,7 @@ button {
 
     &.hover-translate {
         position: relative;
+        transition: all 0.3s ease-in-out; 
 
         &::before {
             position: absolute;
@@ -71,7 +79,6 @@ button {
         }
 
         &:hover {
-            transition: all 0.3s ease-in-out;
             background-color: transparent !important;
         }
     }
@@ -84,10 +91,22 @@ button {
     &.hover-background-text:hover{
         background-color: var(--hover-color) !important;
         color: var(--white) !important;
+        border: none !important;
     }
+}
+
+.text-hover:hover{
+    color: var(--hover-color) !important;
+    transition: color .2s linear;
 }
 
 .wrapper-item + .wrapper-item {
     padding-top: 80px;
     background-color: var(--white);
+}
+
+.ant-menu-item-active::after,
+.ant-menu-submenu-active::after,
+.ant-menu-item-selected::after{
+    border-bottom: 2px solid var(--white) !important;
 }
